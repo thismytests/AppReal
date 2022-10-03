@@ -1,0 +1,316 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "675593dc-d855-437e-a1e1-d9b0259064c3",
+			"uid": "0-675593dc-d855-437e-a1e1-d9b0259064c3",
+			"name": "todolist",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"d656d110-8aab-4165-bab7-1febc7c3ea00",
+				"ef2f7141-e847-4dca-9177-c013bfde6162",
+				"333928c1-5773-45ad-957d-1c5cc28e90ce",
+				"bd57b744-21cd-4234-a957-df9539d69294",
+				"1d714bc6-e2af-48db-aca9-8ff3a16f5374",
+				"71f92005-9782-4426-b748-d32ffd1778aa"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2022-09-28T16:25:24.845Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "1d714bc6-e2af-48db-aca9-8ff3a16f5374",
+					"uid": "0-1d714bc6-e2af-48db-aca9-8ff3a16f5374",
+					"name": "updateTask",
+					"url": "{{host}}:{{port}}/todolist/1664819317434",
+					"description": "postman-echo.com/get",
+					"data": [
+						{
+							"key": "isSelected",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "updateName",
+							"type": "text"
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "urlencoded",
+					"headerData": [
+						{
+							"key": "login",
+							"value": "",
+							"type": "text",
+							"enabled": false
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "675593dc-d855-437e-a1e1-d9b0259064c3",
+					"headers": "//login: \n",
+					"pathVariables": {}
+				},
+				{
+					"id": "333928c1-5773-45ad-957d-1c5cc28e90ce",
+					"uid": "0-333928c1-5773-45ad-957d-1c5cc28e90ce",
+					"name": "getTaskById",
+					"url": "{{host}}:{{port}}/todolist/1664819317434",
+					"description": "postman-echo.com/get",
+					"data": [
+						{
+							"key": "login",
+							"value": "login",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "urlencoded",
+					"headerData": [
+						{
+							"key": "login",
+							"value": "",
+							"type": "text",
+							"enabled": false
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "675593dc-d855-437e-a1e1-d9b0259064c3",
+					"headers": "//login: \n",
+					"pathVariables": {}
+				},
+				{
+					"id": "71f92005-9782-4426-b748-d32ffd1778aa",
+					"uid": "0-71f92005-9782-4426-b748-d32ffd1778aa",
+					"name": "deleteTaskById",
+					"url": "{{host}}:{{port}}/todolist/1664819317434",
+					"description": "postman-echo.com/get",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "urlencoded",
+					"headerData": [
+						{
+							"key": "login",
+							"value": "",
+							"type": "text",
+							"enabled": false
+						}
+					],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "675593dc-d855-437e-a1e1-d9b0259064c3",
+					"headers": "//login: \n",
+					"pathVariables": {}
+				},
+				{
+					"id": "bd57b744-21cd-4234-a957-df9539d69294",
+					"uid": "0-bd57b744-21cd-4234-a957-df9539d69294",
+					"name": "createTask",
+					"url": "{{host}}:{{port}}/todolist?",
+					"description": "postman-echo.com/get",
+					"data": [
+						{
+							"key": "isSelected",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "testName",
+							"type": "text"
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "urlencoded",
+					"headerData": [
+						{
+							"key": "login",
+							"value": "",
+							"type": "text",
+							"enabled": false
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "",
+							"value": null,
+							"equals": false,
+							"description": null,
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "675593dc-d855-437e-a1e1-d9b0259064c3",
+					"headers": "//login: \n",
+					"pathVariables": {}
+				},
+				{
+					"id": "d656d110-8aab-4165-bab7-1febc7c3ea00",
+					"uid": "0-d656d110-8aab-4165-bab7-1febc7c3ea00",
+					"name": "login",
+					"url": "{{host}}:{{port}}/auth/login?login=login&password=password",
+					"description": "postman-echo.com/get",
+					"data": [
+						{
+							"key": "login",
+							"value": "login",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "urlencoded",
+					"headerData": [
+						{
+							"key": "login",
+							"value": "",
+							"type": "text",
+							"enabled": false
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "login",
+							"value": "login"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "675593dc-d855-437e-a1e1-d9b0259064c3",
+					"headers": "//login: \n",
+					"pathVariables": {}
+				},
+				{
+					"id": "ef2f7141-e847-4dca-9177-c013bfde6162",
+					"uid": "0-ef2f7141-e847-4dca-9177-c013bfde6162",
+					"name": "getAllTasks",
+					"url": "{{host}}:{{port}}/todolist",
+					"description": "postman-echo.com/get",
+					"data": [
+						{
+							"key": "login",
+							"value": "login",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					],
+					"dataOptions": null,
+					"dataMode": "urlencoded",
+					"headerData": [
+						{
+							"key": "login",
+							"value": "",
+							"type": "text",
+							"enabled": false
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "675593dc-d855-437e-a1e1-d9b0259064c3",
+					"headers": "//login: \n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "2f649ed0-c157-4b48-a5ca-ebf8888b51a4",
+			"name": "todolist",
+			"values": [
+				{
+					"key": "host",
+					"value": "localhost",
+					"enabled": true
+				},
+				{
+					"key": "port",
+					"value": "3000",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "id",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "0ea07492-da49-489c-81ed-79486e47da42",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}

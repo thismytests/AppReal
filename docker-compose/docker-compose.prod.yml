@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  db:
+    network_mode: host
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: 'eat_beat'
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'password'
+    ports:
+      - '5432:5432'
+  nodejs:
+
+    network_mode: host
+    build: ../Dockerfile
+    restart: always
+    command: bash -c "npm run db:plan:dev && npm run db:apply:dev && npm run db:pull:dev && npm run start:dev"
+    ports:
+      - '3000:3000'
